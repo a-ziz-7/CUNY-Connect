@@ -40,7 +40,7 @@ body {
 }
 
 .menu-button:hover {
-    background-color: #2C4DAB; /* Slightly darker than Lighter CUNY Blue */
+    background-color: #2C4DAB; 
     border-radius: 4px;
 }
 
@@ -55,8 +55,9 @@ body {
 .filter-group {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 63%;
 }
 
 .filter-group select {
@@ -67,15 +68,15 @@ body {
 
 .search-button {
     padding: 10px 15px;
-    background-color: #1E3A8A; /* Lighter CUNY Blue */
-    color: #FFCC00; /* Lighter CUNY Yellow */
+    background-color: #1E3A8A; 
+    color: #FFCC00; 
     border: none;
     cursor: pointer;
     font-size: 14px;
 }
 
 .search-button:hover {
-    background-color: #2C4DAB; /* Slightly darker than Lighter CUNY Blue */
+    background-color: #2C4DAB; 
 }
 
 .content {

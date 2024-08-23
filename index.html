@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUNY Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Menu -->
+    <div class="menu">
+        <div class="menu-left">
+            <h1>CUNY Connect</h1>
+        </div>
+        <div class="menu-right">
+            <button class="menu-button">Home</button>
+            <button class="menu-button">About</button>
+            <button class="menu-button">Settings</button>
+            <button class="menu-button">Help</button>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <div class="filter-group">
+            <select name="type">
+                <option value="">Select Type</option>
+                <option value="food">Food Pantry Info</option>
+                <option value="library">Library Updates</option>
+                <option value="gym">Gym Notification</option>
+                <option value="fire">Fire Drill Alerts</option>
+            </select>
+
+            <select name="school">
+                <option value="">Select School</option>
+                <option value="baruch">Baruch</option>
+                <option value="brooklyn">Brooklyn</option>
+                <option value="hunter">Hunter</option>
+                <option value="queens">Queens</option>
+                <option value="ccny">CCNY</option>
+                <option value="citytech">City Tech</option>
+            </select>
+            
+            <select name="timeline">
+                <option value="">Select Timeline</option>
+                <option value="day">Within a Day</option>
+                <option value="week">Within a Week</option>
+                <option value="month">Within a Month</option>
+            </select>
+            <button type="button" class="search-button">Search</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Listing Section -->
+        <div class="listing">
+            <table id="listingTable">
+                <thead>
+                    <tr>
+                        <th>Info</th>
+                        <th>Type</th>
+                        <th>School</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="brooklyn">
+                        <td>Example Info</td>
+                        <td>Library</td>
+                        <td><img src="/icons/brooklyn.png"></td>
+                        <td>08/23/24</td>
+                    </tr>
+                    <tr class="baruch">
+                        <td>Example Info</td>
+                        <td>Gym ...</td>
+                        <td><img src="/icons/baruch.png"></td>
+                        <td>08/23/24</td>
+                    </tr>
+                    <tr class="hunter">
+                        <td>Example Info</td>
+                        <td>Food Pantry</td>
+                        <td><img src="/icons/hunter.png"></td>
+                        <td>08/23/24</td>
+                    </tr>
+                    <tr class="ccny">
+                        <td> Example InfoExample InfoExample InfoExExample InfoExample InfoExample Info InfoExample InfoExample InfoExample Info</td>
+                        <td>Fire Drill</td>
+                        <td><img src="/icons/ccny.png"></td>
+                        
+                        <td>08/23/24</td>
+                    </tr>
+                    <tr class="queens">
+                        <td>Example Info</td>
+                        <td>Gym ...</td>
+                        <td><img src="/icons/queens.png"></td>
+                        <td>08/23/24</td>
+                    </tr>
+                    <tr class="cuny">
+                        <td>Example Info</td>
+                        <td>Gym ...</td>
+                        <td><img src="/icons/cuny.png"></td>
+                        <td>08/23/24</td>
+                    </tr>
+                    <tr class="cuny">
+                        <td>Example Info</td>
+                        <td>Gym ...</td>
+                        <td><img src="/icons/cuny.png"></td>
+                        <td>08/23/24</td>
+                    </tr>
+                    <tr class="cuny">
+                        <td>Example Info</td>
+                        <td>Gym ...</td>
+                        <td><img src="/icons/cuny.png"></td>
+                        <td>08/23/24</td>
+                    </tr>
+                    <tr class="cuny">
+                        <td>Example Info</td>
+                        <td>Gym ...</td>
+                        <td><img src="/icons/cuny.png"></td>
+                        <td>08/23/24</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <form>
+                <label for="name">Name:</label>
+                <textarea id="name" name="name" rows="1"></textarea>
+
+                <label for="email">Email:</label>
+                <textarea id="email" name="email" rows="1"></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <textarea id="phone" name="phone" rows="1"></textarea>
+
+                <label for="college">College Name:</label>
+                <select id="college" name="college">
+                    <option value="">Select College</option>
+                    <option value="baruch">Baruch</option>
+                    <option value="brooklyn">Brooklyn</option>
+                    <option value="hunter">Hunter</option>
+                    <option value="queens">Queens</option>
+                    <option value="ccny">CCNY</option>
+                    <option value="citytech">City Tech</option>
+                </select>
+
+                <label for="notification">Preferred Notification:</label>
+                <div id="notification">
+                    <input type="radio" id="email" name="notification" value="email">
+                    <label for="email">Email</label>
+
+                    <input type="radio" id="sms" name="notification" value="sms">
+                    <label for="sms">SMS</label>
+
+                    <input type="radio" id="both" name="notification" value="both">
+                    <label for="both">Both</label>
+                </div>
+
+                <button type="submit" class="submit-button">Register</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 CUNY Connect. All rights reserved. Built for CTP Hackathon.</p>
+    </div>
+</body>
+</html>

@@ -192,7 +192,7 @@ form textarea {
 
 .listing {
     width: 66%;
-    padding-right: 20px;
+    padding-right: 10px;
     box-sizing: border-box;
     min-height: 100%;
     height: 75vh;
@@ -270,3 +270,135 @@ td img {
 .cuny {
     background-color: rgba(17, 32, 170, 0.6);
 }
+
+
+/* Base Styles (Already in your CSS) */
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+
+    /* Menu */
+    .menu-left h1 {
+        font-size: 18px; /* Smaller font size for the project name */
+    }
+
+    .menu-button {
+        font-size: 14px; /* Smaller font size for the menu buttons */
+        padding: 5px 8px; /* Adjust padding to make it more compact */
+    }
+
+    /* Filters */
+    .filter-group {
+        width: 100%; /* Make the filters take full width */
+        flex-direction: column; /* Stack filters vertically */
+    }
+
+    .filter-group select, .search-button {
+        margin-bottom: 10px; /* Add margin between stacked elements */
+        width: 100%; /* Make filters and search button take full width */
+        padding: 8px; /* Adjust padding for a more compact touch experience */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    /* Content */
+    .content {
+        flex-direction: column; /* Stack listing and form section vertically */
+        gap: 10px;
+    }
+
+    .listing, .form-section {
+        width: 100%; /* Full width for both sections on mobile */
+        padding: 0px; /* Adjust padding for a more compact layout */
+    }
+
+    .listing {
+        /* height: auto; */
+        min-height: 100%;
+        height: 60vh;
+        resize: none;
+    }
+
+    .form-section {
+        margin-top: 20px; /* Add space between listing and form section */
+    }
+
+    /* Table Rows */
+    #listingTable th, #listingTable td {
+        padding: 5px 8px; /* Reduce padding to make rows more compact */
+        font-size: 12px; /* Smaller font size for table content */
+    }
+
+    #listingTable thead th {
+        background-color: #f4f4f4; /* Light gray background for header */
+    }
+
+    #listingTable td {
+        border-bottom: 1px solid #ddd; /* Light border for separation between rows */
+    }
+
+    td img {
+        width: 50px; /* Sets the width of the image */
+        height: 30px; /* Maintains the aspect ratio */
+        display: block; /* Removes extra space below the image */
+        margin: 0 auto; /* Centers the image */
+    }
+
+    .form-section {
+        /* width: 33.33%; */
+        background-color: #e8e8e8;
+        padding: 7px; /* Reduced padding for a smaller form */
+        box-sizing: border-box;
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 3px; /* Reduced margin between labels and inputs */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+    
+    form select, form textarea, form input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px; /* Reduced margin between form elements */
+        padding: 6px; /* Reduced padding inside inputs */
+        font-size: 14px; /* Slightly smaller font size */
+        box-sizing: border-box;
+        height: 30px; /* Reduced height for inputs */
+        resize: none; /* Disable resizing */
+    }
+    
+    form textarea {
+        height: 30px; /* Match the height of the other inputs */
+        overflow: hidden; /* Hide scrollbar */
+    }
+    
+    #notification {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Reduced gap between notification options */
+    }
+    
+    #notification label {
+        font-size: 14px; /* Slightly smaller font size */
+    }
+    
+    #notification input[type="radio"] {
+        width: 14px; /* Reduced size for the square radio buttons */
+        height: 14px; /* Reduced size for the square radio buttons */
+    }
+    
+    .submit-button {
+        padding: 8px 12px; /* Reduced padding for the submit button */
+        font-size: 14px; /* Maintain font size for legibility */
+        margin-top: 15px; /* Reduced margin at the top of the button */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+
+    /* Footer */
+    .footer {
+        /* font-size: 11px; Smaller font for footer text */
+        display: none;
+    }
+}
+
